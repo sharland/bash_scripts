@@ -1,0 +1,16 @@
+#!/bin/bash
+
+OPTIONS="Hello News Quit"
+select opt in $OPTIONS; do
+	if ["$opt" = "Quit"]; then
+	 echo done
+	 exit
+	elif ["$opt" = "News"]; then
+	 echo "No News is good news!"
+	elif ["$opt" = "Hello"]; then
+	 echo "Hello, how are you?"
+	else
+	 clear
+	 echo bad option
+	fi
+done
